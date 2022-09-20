@@ -2,7 +2,7 @@
 #include "Auto.h"
 
 
-std::ostream& Auto::drucke(std::ostream &out) {
+std::ostream& Car::drucke(std::ostream &out) {
 	std::string text;
 	text += "PS: " + std::to_string(PS) + "\n";
 	text += "Bar: " + std::to_string(Reifendruck) + "\n";

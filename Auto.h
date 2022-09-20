@@ -2,9 +2,9 @@
 #include <string>
 #include <sstream>
 
-class Auto {
+class Car {
 public:
-	Auto() : PS(258), Reifendruck(2.5), Namen("Ente"), Besitzer("Max") {
+	Car() : PS(258), Reifendruck(2.5), Namen("Ente"), Besitzer("Max") {
 
 	}
 	std::ostream& drucke(std::ostream& out);
@@ -14,6 +14,7 @@ protected:
 	std::string Namen;
 	std::string Besitzer;
 };
-std::ostream& operator<<(std::ostream& out, const Auto& right) {
-	return right.drucke(out);
+std::ostream& operator<<(std::ostream& out, Car& right) {
+	right.drucke(out);
+	return out;
 	}

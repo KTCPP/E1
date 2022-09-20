@@ -1,8 +1,8 @@
 #include "pch.h"
 #include "Auto.h"
 
-TEST(Auto, drucke) {
-	Auto Ente;
+TEST(Car, drucke) {
+	Car Ente;
 	std::stringstream out;
 	Ente.drucke(out);
 	std::string expected;
