@@ -8,13 +8,10 @@ public:
 
 	}
 	std::ostream& drucke(std::ostream& out);
+	friend std::ostream& operator<<(std::ostream& out, Car& right);
 protected:
 	int PS;
 	double Reifendruck;
 	std::string Namen;
 	std::string Besitzer;
 };
-std::ostream& operator<<(std::ostream& out, Car& right) {
-	right.drucke(out);
-	return out;
-	}

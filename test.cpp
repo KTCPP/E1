@@ -13,5 +13,5 @@ TEST(Car, drucke) {
 	expected += "Autoname: " + Autoname + "\n";
 	expected += "Halter: " + Halter + "\n";
 	EXPECT_EQ(out.str(), expected);
-
+	std::cout << "Ente:" << Ente << std::endl;
 }

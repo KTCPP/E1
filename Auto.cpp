@@ -13,3 +13,7 @@ std::ostream& Car::drucke(std::ostream &out) {
 
 
 }
+std::ostream& operator<<(std::ostream& out, Car& right) {
+	right.drucke(out);
+	return out;
+	}
