@@ -1,6 +1,8 @@
 #include "pch.h"
+#include "Auto.h"
 
-TEST(TestCaseName, TestName) {
-  EXPECT_EQ(1, 1);
-  EXPECT_TRUE(true);
+TEST(Auto, drucke) {
+	Auto Ente;
+	std::ostream* out;
+	Ente.drucke();
 }
